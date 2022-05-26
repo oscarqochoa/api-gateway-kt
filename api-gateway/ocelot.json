@@ -1,0 +1,51 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/users",
+      "UpstreamHttpMethod": ["GET"],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/users"
+    },
+    {
+      "UpstreamPathTemplate": "/api/{path}",
+      "UpstreamHttpMethod": [],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44382
+        }
+      ],
+      "DownstreamPathTemplate": "/api/{path}"
+    },
+    {
+      "UpstreamPathTemplate": "/api/clients/{path}",
+      "UpstreamHttpMethod": [],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "DownstreamPathTemplate": "/api/{path}"
+    },
+    {
+      "UpstreamPathTemplate": "/api/authentication/{path}",
+      "UpstreamHttpMethod": [],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4001
+        }
+      ],
+      "DownstreamPathTemplate": "/api/{path}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44362"
+  }
+}
