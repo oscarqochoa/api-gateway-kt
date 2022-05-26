@@ -51,6 +51,7 @@ namespace api_gateway
             app.UseOcelot().Wait();
 
             app.UseHttpsRedirection();
+            app.UseCors("CorsPolicy");
 
             app.UseRouting();
 

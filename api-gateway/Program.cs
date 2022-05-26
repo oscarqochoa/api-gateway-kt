@@ -25,6 +25,7 @@ namespace api_gateway
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://*:5025");
                 });
     }
 }
