@@ -27,7 +27,7 @@
       "UpstreamHttpMethod": [],
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "51.79.70.106",
           "Port": 4000
         }
       ],
@@ -38,8 +38,19 @@
       "UpstreamHttpMethod": [],
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "51.79.70.106",
           "Port": 4001
+        }
+      ],
+      "DownstreamPathTemplate": "/api/{path}"
+    },
+    {
+      "UpstreamPathTemplate": "/api/{path}",
+      "UpstreamHttpMethod": [],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "51.79.70.106",
+          "Port": 4002
         }
       ],
       "DownstreamPathTemplate": "/api/{path}"
